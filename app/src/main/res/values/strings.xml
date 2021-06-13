@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FrutiMatica</string>
+    <string name="carafruta">FrutiMatica</string>
+    <string name="nombre">¿Como te llamas?</string>
+    <string name="jugar">JUGAR !</string>
+
+    <string name="record"></string>
+    <string name="tv_nombre">NOMBRE DEL JUGADOR</string>
+    <string name="score">Nivel:0</string>
+    <string name="manzanas">Manzanas:</string>
+    <string name="respuesta">Respuesta</string>
+    <string name="comprobar">COMPROBAR</string>
+    <string name="salir">SALIR</string>
+</resources>

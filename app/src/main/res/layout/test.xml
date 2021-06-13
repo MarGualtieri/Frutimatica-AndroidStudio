@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/globos"
+    tools:context=".MainActivity" >
+
+
+    <ImageView
+        android:id="@+id/imageView_personaje"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:srcCompat="@drawable/fresa" />
+
+    <EditText
+        android:id="@+id/Ingresar_nombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:textColorHint="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+
+    <Button
+        android:id="@+id/Boton_jugar"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fondoboton"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:onClick="jugar"
+        android:text="@string/jugar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/Ingresar_nombre"
+        app:layout_constraintTop_toBottomOf="@id/Ingresar_nombre" />
+
+
+    <Button
+        android:id="@+id/Boton_salir"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/Ingresar_nombre"
+        app:layout_constraintEnd_toEndOf="@id/Ingresar_nombre"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondoboton"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:onClick="salir"
+        android:text="@string/salir"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+         />
+
+    <TextView
+        android:id="@+id/textView_BestScore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/fondoet"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

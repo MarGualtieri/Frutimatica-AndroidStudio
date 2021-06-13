@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/globos"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_personaje"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fresa" />
+
+    <EditText
+        android:id="@+id/Ingresar_nombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+
+        android:layout_below="@+id/Boton_salir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:textColorHint="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_jugar"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView_personaje"
+        android:layout_alignLeft="@id/Ingresar_nombre"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:onClick="jugar"
+        android:text="@string/jugar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_salir"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView_personaje"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/Boton_jugar"
+        android:background="@color/colorPrimary"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:onClick="salir"
+        android:text="@string/salir"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ingresar_nombre" />
+
+    <TextView
+        android:id="@+id/textView_BestScore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/editTextTextPersonName"
+
+        android:background="@drawable/fondoet"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Boton_jugar" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="Developed by MG Pro Solutions" />
+</RelativeLayout>
